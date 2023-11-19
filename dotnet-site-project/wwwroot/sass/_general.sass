@@ -1,0 +1,580 @@
+.carousel-control-prev
+	width: 60px
+	height: 60px
+	border: 2px solid #303030
+	transform: matrix(1, 0, 0, -1, 0, 0)
+	border-radius: 100%
+	margin-top: 120px
+.carousel-control-next
+	width: 60px
+	height: 60px
+	border: 2px solid #303030
+	transform: matrix(1, 0, 0, -1, 0, 0)
+	border-radius: 100%
+	margin-top: 120px
+
+.head_section
+	&_header
+		font-weight: 400
+		font-size: 36px
+		line-height: 60px
+		letter-spacing: 0.2em
+		color: #D9D9D9
+		text-align: center
+		margin-top: -70px
+		text-transform: capitalize
+		// &::after
+		// 	content: ' '
+		// 	width: 60px
+		// 	height: 2px
+		// 	background: #34C759
+	&_img
+		padding-top: 100px
+		display: block
+		margin: 0 auto
+	&_underline
+		display: block
+		margin: 0 auto
+		width: 60px
+		height: 2px
+		background: #34C759
+		margin-top: 25px
+		margin-bottom: 60px
+
+::-webkit-scrollbar 
+	width: 4px
+::-webkit-scrollbar-track 
+	background: none
+::-webkit-scrollbar-thumb 
+	background: #303030
+	border-radius: 100px
+::-webkit-scrollbar-thumb:hover 
+	background: #555
+
+.promo
+	height: 1080px
+	background: url('../image/background.png') center (center/cover) no-repeat
+	background-color: #1A1A1A
+	.underline
+		height: 1px
+		background-color: white
+	&_menu
+		height: 90px
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: space-arround
+	&_logo
+		display: flex
+		align-items: center
+		justify-content: start
+		&_img
+			padding-right: 9px
+			padding-bottom: 8px
+	&_link
+		display: flex
+		justify-content: end
+		align-items: center
+		padding-top: 15px
+		.menu
+			display: flex
+			align-items: center
+			color: white
+			list-style: none
+			&_link
+				color: white
+				text-decoration: none
+				transition: 1s ease
+				font-weight: 700
+				font-size: 14px
+				padding-left: 45px
+				&:hover
+					color: #34C759
+					transition: 1s ease
+	h1
+		color: white
+		font-size: 72px
+		text-align: center
+		letter-spacing: 0.1em
+		text-transform: capitalize
+		padding-top: 80px
+	span
+		font-weight: 300
+	&_subheader
+		padding-top: 16px
+		padding-bottom: 40px
+		text-align: center
+		font-weight: 300
+		font-size: 16px
+		letter-spacing: 0.2px
+		color: #FFFFFF
+		mix-blend-mode: normal
+		opacity: 0.7
+		line-height: 26px
+	&_btn
+		display: block
+		margin: 0 auto
+		width: 220px
+		height: 72px
+		background: #34C759
+		border-radius: 43px
+		border: 0px solid #34C759 
+		outline: none
+		box-shadow: none
+		transition: 1s ease
+		font-weight: 700
+		font-size: 18px
+		text-align: center
+		letter-spacing: 0.2em
+		color: #1A1A1A
+		&:hover
+			background: orangered
+			transition: 1s ease
+.promo_in
+
+	margin-top: 70px
+	display: flex
+	justify-content: space-between	
+	&_info
+
+		&_img
+			display: block
+			margin: 0 auto
+			padding-bottom: 13px
+		&_head
+			font-weight: 400
+			font-size: 16px
+			text-align: center
+			color: #FFFFFF
+		&_text
+			font-weight: 400
+			font-size: 14px
+			text-align: center
+			color: #FFFFFF
+			mix-blend-mode: normal
+			opacity: 0.5
+.about_s
+	.about
+		height: 736px
+		background: #252525
+		box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1)
+		border-radius: 6px
+		margin-top: -200px
+		&_img
+			padding-top: 80px
+			display: block
+			margin: 0 auto
+		&_header
+			font-weight: 400
+			font-size: 30px
+			line-height: 60px
+			letter-spacing: 0.2em
+			color: #D9D9D9
+			text-align: center
+			margin-top: -70px
+		&_text
+			margin-top: 80px
+			font-weight: 400
+			font-size: 16px
+			text-align: center
+			color: #A6A6A6
+		&_carusel
+			margin: 0 auto
+			margin-top: 90px
+			width: 100%
+.car
+	display: flex
+	align-items: center
+	justify-content: center
+	&_img
+		margin-left: 35px
+
+.work
+	.mycard
+		.card
+			transition: 1s ease
+			margin-left: 30px
+			margin-bottom: 20px
+			height: 206px
+			box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1)
+			border-radius: 6px
+			background: #252525
+			.card-title
+				font-weight: 400
+				font-size: 22px
+				letter-spacing: -0.275px
+				text-transform: capitalize
+				color: #FFFFFF
+				margin: 0 25px
+				transition: 1s ease
+			.card-text
+				font-weight: 400
+				font-size: 13px
+				letter-spacing: -0.1625px
+				color: rgba(255, 255, 255, 0.5)
+				margin: 0 25px
+				transition: 1s ease
+			.card_underline
+				height: 2px
+				width: 55px
+				background: #34C759
+				margin: 0 25px
+				margin-top: 10px
+				margin-bottom: 25px
+				transition: 1s ease
+			&:hover
+				transition: 1s ease
+				background: #34C759
+				.card-title
+					transition: 1s ease
+					color: #191919
+				.card-text
+					color: #191919
+					transition: 1s ease
+				.card_underline
+					background: #191919
+					transition: 1s ease
+.dishesh
+	&_card
+		min-height: 495px
+		background: #252525
+		box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1)
+		border-radius: 6px
+		margin: 0 15px
+		margin-top: 30px
+		position: relative
+	.card_img
+		width: 100%
+	.card_header
+		font-weight: 400
+		font-size: 32px
+		line-height: 30px
+		color: #D9D9D9
+		padding-left: 30px
+		padding-top: 30px
+	.share_img
+		position: absolute
+		left: 350px
+		top: 20px
+		background: #000000
+		mix-blend-mode: normal
+		opacity: 0.3
+		border-radius: 100%
+		transition: 1s ease
+		&:hover
+			opacity: 1
+			transform: scale3d(1.1,1.1,1.1)
+			transition: 1s ease
+	.card_subheader
+		font-weight: 400
+		font-size: 12px
+		letter-spacing: 0.15px
+		color: #A4A8B2
+		padding-left: 30px
+	.card_text
+		font-weight: 400
+		font-size: 13px
+		letter-spacing: -0.1625px
+		color: #85878C
+		padding-left: 30px
+		padding-top: 20px
+	.card_range
+		padding-top: 20px
+		padding-left: 30px
+		display: flex
+		align-items: center
+		padding-bottom: 25px
+		&_star
+			color: white
+			padding-right: 45px
+			display: flex
+			justify-content: space-between
+			align-items: center
+	.bal
+		padding-left: 10px
+		padding-right: 45px
+	.card_btn
+		padding: 0 32px
+		background: #262626
+		border: 2px solid #303030
+		border-radius: 30px
+		font-weight: 900
+		font-size: 10px
+		line-height: 40px
+		text-align: center
+		letter-spacing: 0.2em
+		text-transform: uppercase
+		color: rgba(255, 255, 255, 0.5)
+		transition: 1s ease
+		&:hover
+			background: #34C759
+			color: #252525
+			transition: 1s ease
+.chefs
+	display: flex
+	justify-content: center
+	&_about
+		display: flex
+		align-items: center
+		padding-bottom: 25px
+		padding-top: 10px
+		justify-content: start
+		padding-left: 20px
+		&_img
+			padding-right: 25px
+		&_info
+			&_header
+				font-weight: 400
+				font-size: 18px
+				line-height: 21px
+				letter-spacing: -0.225px
+				color: #FFFFFF
+			&_text
+				font-weight: 400
+				font-size: 12px
+				line-height: 16px
+				letter-spacing: -0.15px
+				color: rgba(255, 255, 255, 0.5)
+	&_food
+		display: flex
+		align-items: center
+		justify-content: center
+		&_img
+			margin-right: 30px
+.resepies
+	padding-bottom: 30px
+	&_foto
+		margin-bottom: 20px
+		min-height: 510px
+		background: url('../image/RECEPT_BIG.png') center (center/cover) no-repeat
+		&_img
+			display: flex
+			justify-content: end
+			align-items: center
+			padding-top: 40px
+			padding-right: 40px
+			&_f
+				padding: 10px
+				background: rgba(0, 0, 0, 0.4)
+				border-radius: 100%
+				transition: 1s ease
+				&:hover
+					transform: scale3d(1.1,1.1,1.1)
+		&_name
+			margin: 0 auto
+			width: 20%
+			padding: 5px
+			font-weight: 900
+			font-size: 10px
+			text-align: center
+			letter-spacing: 1.25px
+			text-transform: uppercase
+			color: #FFFFFF
+			border-radius: 3px
+			background: rgba(0, 0, 0, 0.4)
+		&_date
+			display: block
+			text-align: center
+			margin-top: 65px
+			font-weight: 400
+			font-size: 14px
+			color: #FFFFFF
+		&_header
+			margin-top: 30px
+			font-weight: 400
+			font-size: 24px
+			text-align: center
+			color: #FFFFFF
+			padding: 0 65px
+		&_autor
+			margin-top: 45px
+			font-weight: 400
+			font-size: 14px
+			line-height: 30px
+			color: #FFFFFF
+			text-align: center
+		&_activiti
+			margin-top: 60px
+			display: flex
+			align-items: center
+			justify-content: center
+			&_coments
+				margin-left: 30px
+				transition: 1s ease
+				&:hover
+					transform: scale3d(1.1,1.1,1.1)
+			&_glass
+				transition: 1s ease
+				&:hover
+					transform: scale3d(1.1,1.1,1.1)
+	&_menu
+		padding-top: 30px
+		background: #252525
+		box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1)
+		border-radius: 6px
+		transition: 1s ease
+		margin-bottom: 40px
+		&:nth-child(2)
+			background: url('../image/food_post.png') center (center/cover) no-repeat
+			
+		&_time
+			&_text
+				font-weight: 400
+				font-size: 16px
+				color: #FFFFFF
+				padding: 0 30px
+			&_bot
+				display: flex
+				align-items: center
+				padding-top: 10px
+				padding-left: 30px
+				padding-bottom: 25px
+				&_name
+					font-weight: 900
+					font-size: 10px
+					text-align: center
+					letter-spacing: 1.25px
+					text-transform: uppercase
+					color: #FFFFFF
+					border-radius: 3px
+					background: rgba(0, 0, 0, 0.4)
+					width: 20%
+					padding: 5px
+				&_flex
+					width: 100%
+					display: flex
+					justify-content: space-between
+					align-items: center
+					&_date
+						font-weight: 400
+						font-size: 12px
+						color:#B3B3B3
+						margin-left: 15px
+					&_activiti
+						padding-right: 20px
+		&:hover
+			transition: 1s ease
+			background-color: #34C759
+.social
+	padding-bottom: 120px
+	.card
+		margin: 0 15px
+		background-color: #262626
+		padding-top: 25px
+		height: 330px
+			
+		&_container
+			display: flex
+			align-items: center
+			justify-content: space-around
+			&_two
+				border-radius: 100%
+				border: 2px solid #303030	
+				padding: 8px
+			&_imge
+				border-radius: 100%
+				border: 2px solid #303030	
+				padding: 8px
+		.card-title
+			font-weight: 400
+			font-size: 14px
+			color: #BFBFBF
+			margin-right: 100px
+			text-align: center
+			padding-top: 10px
+		&_btn
+			font-weight: 900
+			font-size: 10px
+			text-align: center
+			letter-spacing: 0.2em
+			text-transform: uppercase
+			color: #737373
+			background: #262626
+			border: 2px solid #303030
+			border-radius: 30px
+			padding: 10px 18px
+			transition: 1s ease
+			&:hover
+				transition: 1s ease
+				background-color: #34C759
+				color: black
+		&_underline
+			height: 2px
+			background: #303030
+			margin-top: 23px
+		&_content
+			padding: 0 20px	
+		&_date
+			font-weight: 400
+			font-size: 14px
+			color: #737373
+			margin-top: 20px
+		.card-text
+			overflow: auto
+			overflow-x: hidden
+			height: 160px
+			font-weight: 400
+			font-size: 14px
+			color: rgba(255, 255, 255, 0.7)
+			padding-top: 10px
+			.card_autor
+				font-weight: 400
+				font-size: 14px
+				color: #34C759
+				text-decoration: none
+				padding-bottom: 20px
+		.card-text_2
+			overflow: auto
+			overflow-x: hidden
+			height: 200px
+			font-weight: 400
+			font-size: 14px
+			color: rgba(255, 255, 255, 0.7)
+			padding-top: 10px
+			&_img
+				height: 100px
+.foot
+	height: 275px
+	background: #252525
+
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1)
+	&_underline
+		height: 2px
+		background: #303030
+		margin-top: 40px
+	&_logo
+		margin-top: 40px
+		display: flex
+		align-items: center
+		justify-content: center
+	&_comercial
+		font-weight: 400
+		font-size: 12px
+		display: flex
+		align-items: center
+		text-align: center
+		color: #737373
+		justify-content: center
+
+.foot_in
+	padding-top: 30px
+	display: flex
+	justify-content: space-between	
+	&_info
+		&_img
+			display: block
+			margin: 0 auto
+			padding-bottom: 13px
+		&_head
+			font-weight: 400
+			font-size: 16px
+			text-align: center
+			color: #FFFFFF
+		&_text
+			font-weight: 400
+			font-size: 14px
+			text-align: center
+			color: #FFFFFF
+			mix-blend-mode: normal
+			opacity: 0.5
+		

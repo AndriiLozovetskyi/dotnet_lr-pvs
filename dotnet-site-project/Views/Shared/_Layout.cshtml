@@ -1,0 +1,79 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>@ViewData["Title"] - Healtly food</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="~/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="~/css/bootstrap-grid.min.css">
+    <script src="~/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="~/css/bootstrap.css">
+    <link rel="stylesheet" href="~/css/style.css">
+</head>
+<body>
+<header class="promo">
+    <div class="container">
+        <div class="row">
+
+            <nav class="promo_menu col">
+                <div class="promo_logo">
+                    <img src="~/icon/Logo.png" alt="logo" class="promo_logo_img">
+                    <img src="~/icon/Logo_text.png"alt="logo_t" class="promo_logo_text">
+                </div>
+                <div class="promo_link col">
+                    <ul class="menu">
+                        <li >
+                            <a href="/" class="menu_link">Menu</a>
+                        </li>
+                        <li >
+                            <a href="/mail" class="menu_link">Send Email</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+        </div>
+    </div>
+    <div class="underline"></div>
+</header>
+
+<main class="main-content">
+    @RenderBody()
+</main>
+
+
+<footer class="foot">
+    <div class="container">
+        <div class="foot_in">
+            <div class=" foot_in_info">
+                <img src="~/icon/ic_watch_later.png" alt="time" class="promo_in_info_img">
+                <div class="foot_in_info_head">Today 10:00 am - 7:00 pm</div>
+                <div class="foot_in_info_text">Working hours</div>
+            </div>
+            <div class=" foot_in_info">
+                <img src="~/icon/ic_near_me.png" alt="map" class="promo_in_info_img">
+                <div class="foot_in_info_head">Velyka Vasylkivska 100</div>
+                <div class="foot_in_info_text">Get Directions</div>
+            </div>
+            <div class=" foot_in_info">
+                <img src="~/icon/ic_call.png" alt="call" class="promo_in_info_img">
+                <div class="foot_in_info_head">+38 (063)833 24 15</div>
+                <div class="foot_in_info_text">Call Online</div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class="foot_underline"></div>
+    <div class="container">
+        <div class="foot_logo">
+            <img src="~/icon/Logo.png" alt="logo" class="promo_logo_img">
+            <img src="~/icon/Logo_text.png"alt="logo_t" class="promo_logo_text">
+        </div>
+        <div class="foot_comercial">© Designed by Yellow Snow. All Rights Reserved. </div>
+    </div>
+</footer>
+</body>
+</html>

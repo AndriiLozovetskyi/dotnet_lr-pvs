@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <RootNamespace>dotnet_site_project</RootNamespace>
+        <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Content Include="..\.dockerignore">
+        <Link>.dockerignore</Link>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="InvertedSoftware.PLogger.Core" Version="1.0.0" />
+      <PackageReference Include="Microsoft.Web.LibraryManager.Build" Version="2.1.175" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\assets\favicon.ico" />
+      <_ContentIncludedByDefault Remove="wwwroot\js\scripts.js" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\dotnet-site-project.services\dotnet-site-project.services.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <AdditionalFiles Include="Views\Mail\Index.cshtml" />
+    </ItemGroup>
+
+</Project>
