@@ -12,6 +12,7 @@ builder.Logging.AddPLogger(settings);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<IEmailService,EmailService>();
+builder.Services.AddScoped<IFileService, FileService>();
 
 
 var app = builder.Build();

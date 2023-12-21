@@ -1,0 +1,23 @@
+@{
+    ViewData["Title"] = "Files page";
+}
+
+<div class="text-center">
+    <div>
+        <a href="/Files/SaveFile">Upload</a>
+    </div>
+    <ul>
+        @foreach(var filelistitem in Model.Files)
+        {
+            <li class="row">
+                <div class="col-6">
+                    <a href="/Files/GetFile?fileName=@filelistitem.FileName">@filelistitem.FileName</a>
+                </div>
+                <div class="col-2">
+                    <a href="/Files/ViewFile?fileName=@filelistitem.FileName">Preview</a>
+                </div>
+            </li>
+        }
+    
+    </ul>    
+</div>

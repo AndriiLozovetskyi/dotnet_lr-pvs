@@ -32,4 +32,8 @@
       <AdditionalFiles Include="Views\Mail\Index.cshtml" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="wwwroot\Files\" />
+    </ItemGroup>
+
 </Project>

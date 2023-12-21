@@ -1,0 +1,31 @@
+@{
+    ViewData["Title"] = "File save page";
+}
+@model dotnet_site_project.Models.FileModel
+
+<div class="text-center">
+    @using (Html.BeginForm(method: FormMethod.Post, htmlAttributes: new { enctype = "multipart/form-data", action = "SaveFile" }))
+    {
+        @Html.ValidationSummary(true, "Something is not correct, pelase repeat")
+        <div>
+            <fieldset>
+                <legend>Save file form</legend>
+    
+                <div class="alert">
+                    @Model.Message
+                </div>
+    
+                <div class="editor-label">
+                    @Html.LabelFor(m => m.File)
+                </div>
+                <div class="editor-field">
+                    @Html.TextBoxFor(m => m.File, new { type = "file" })
+                    @Html.ValidationMessageFor(m => m.File)
+                </div>
+                <p>
+                    <input type="submit" value="Save" />
+                </p>
+            </fieldset>
+        </div>
+    }    
+</div>
